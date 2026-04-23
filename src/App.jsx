@@ -195,19 +195,32 @@ export default function GrandBrandMediaSite() {
               <li className="flex items-center gap-2"><CheckCircle2 className="h-5 w-5 text-fuchsia-300"/> Mon–Fri • 9am–6pm</li>
             </ul>
           </div>
-          <form <form action="https://formspree.io/f/mvzdddgv" method="POST" className="bg-neutral-900/60 border border-white/10 rounded-2xl p-6 shadow">
-            <div className="grid sm:grid-cols-2 gap-4">
-              <Input label="Full Name" placeholder=""/>
-              <Input label="Business" placeholder=""/>
-              <Input label="Email" placeholder=""/>
-              <Input label="Phone" placeholder=""/>
-              <div className="sm:col-span-2">
-                <label className="text-sm font-medium text-neutral-200">What do you need?</label>
-                <textarea className="mt-1 w-full rounded-xl border border-white/10 bg-neutral-900/70 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-fuchsia-500 min-h-[120px]" placeholder="Local ranking, website redesign, social posts, QR, etc."/>
-              </div>
-            </div>
-            <button className="mt-4 w-full rounded-2xl bg-fuchsia-500 text-white font-semibold px-5 py-3 hover:bg-fuchsia-600">Send</button>
-            <p className="text-xs text-neutral-400 mt-3">By sending, you agree to be contacted about your project. No spam, ever.</p>
+          <form action="https://formspree.io/f/mvzdddgv" method="POST" className="bg-neutral-900/60 border border-white/10 rounded-2xl p-6 shadow">
+  <div className="grid sm:grid-cols-2 gap-4">
+    <Input label="Full Name" name="name" placeholder="" required />
+    <Input label="Business" name="business" placeholder="" />
+    <Input label="Email" name="email" type="email" placeholder="" required />
+    <Input label="Phone" name="phone" type="tel" placeholder="" />
+
+    <div className="sm:col-span-2">
+      <label className="text-sm font-medium text-neutral-200">What do you need?</label>
+      <textarea
+        name="message"
+        className="mt-1 w-full rounded-xl border border-white/10 bg-neutral-900/70 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-fuchsia-500 min-h-[120px]"
+        placeholder="Local ranking, website redesign, social posts, QR, etc."
+        required
+      />
+    </div>
+  </div>
+
+  <button type="submit" className="mt-4 w-full rounded-2xl bg-fuchsia-500 text-white font-semibold px-5 py-3 hover:bg-fuchsia-600">
+    Send
+  </button>
+
+  <p className="text-xs text-neutral-400 mt-3">
+    By sending, you agree to be contacted about your project. No spam, ever.
+  </p>
+</form>
           </form>
         </div>
       </section>
