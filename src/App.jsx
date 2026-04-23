@@ -190,17 +190,17 @@ export default function GrandBrandMediaSite() {
             <h2 className="text-3xl sm:text-4xl font-black">Let’s grow your brand.</h2>
             <p className="mt-3 text-neutral-300">Tell us about your business and goals. We’ll reply fast with a clear plan.</p>
             <ul className="mt-6 space-y-3 text-neutral-200">
-              <li className="flex items-center gap-2"><Phone className="h-5 w-5 text-fuchsia-300"/> (555) 000‑1234</li>
-              <li className="flex items-center gap-2"><Mail className="h-5 w-5 text-fuchsia-300"/> hello@grandbrand.media</li>
+              <li className="flex items-center gap-2"><Phone className="h-5 w-5 text-fuchsia-300"/> (302) 487‑0516</li>
+              <li className="flex items-center gap-2"><Mail className="h-5 w-5 text-fuchsia-300"/> support@grandbrandmedia.com</li>
               <li className="flex items-center gap-2"><CheckCircle2 className="h-5 w-5 text-fuchsia-300"/> Mon–Fri • 9am–6pm</li>
             </ul>
           </div>
           <form onSubmit={(e)=>e.preventDefault()} className="bg-neutral-900/60 border border-white/10 rounded-2xl p-6 shadow">
             <div className="grid sm:grid-cols-2 gap-4">
-              <Input label="Full Name" placeholder="Jane Doe"/>
-              <Input label="Business" placeholder="Grand Brand Media"/>
-              <Input label="Email" placeholder="jane@example.com"/>
-              <Input label="Phone" placeholder="(555) 123‑4567"/>
+              <Input label="Full Name" placeholder=""/>
+              <Input label="Business" placeholder=""/>
+              <Input label="Email" placeholder=""/>
+              <Input label="Phone" placeholder=""/>
               <div className="sm:col-span-2">
                 <label className="text-sm font-medium text-neutral-200">What do you need?</label>
                 <textarea className="mt-1 w-full rounded-xl border border-white/10 bg-neutral-900/70 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-fuchsia-500 min-h-[120px]" placeholder="Local ranking, website redesign, social posts, QR, etc."/>
