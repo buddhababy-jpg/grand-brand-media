@@ -378,8 +378,8 @@ function Footer() {
         <div>
           <div className="text-white font-semibold">Contact</div>
           <ul className="mt-3 space-y-2 text-sm text-neutral-300">
-            <li>(555) 000‑1234</li>
-            <li>hello@grandbrand.media</li>
+            <li>(302) 487‑0516</li>
+            <li>support@grandbrandmedia.com</li>
           </ul>
         </div>
       </div>
