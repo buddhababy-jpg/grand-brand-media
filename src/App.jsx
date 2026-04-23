@@ -195,7 +195,7 @@ export default function GrandBrandMediaSite() {
               <li className="flex items-center gap-2"><CheckCircle2 className="h-5 w-5 text-fuchsia-300"/> Mon–Fri • 9am–6pm</li>
             </ul>
           </div>
-          <form onSubmit={(e)=>e.preventDefault()} className="bg-neutral-900/60 border border-white/10 rounded-2xl p-6 shadow">
+          <form <form action="https://formspree.io/f/mvzdddgv" method="POST" className="bg-neutral-900/60 border border-white/10 rounded-2xl p-6 shadow">
             <div className="grid sm:grid-cols-2 gap-4">
               <Input label="Full Name" placeholder=""/>
               <Input label="Business" placeholder=""/>
