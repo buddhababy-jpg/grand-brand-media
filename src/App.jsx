@@ -59,7 +59,7 @@ export default function GrandBrandMediaSite() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-           className="mt-5 text-4xl sm:text-6xl font-black leading-[1.25] pb-4"
+           className="mt-5 text-4xl sm:text-6xl font-black leading-[1.35] pb-4"
           >
             Grand Brand Media
             <span className="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-300 via-cyan-200 to-emerald-300">
