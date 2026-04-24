@@ -333,7 +333,7 @@ function PolicySections() {
     <section className="bg-neutral-900/60 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid lg:grid-cols-3 gap-6">
         <PolicyCard id="privacy" title="Privacy Policy">
-          <p>Effective Date: April 23, 2026</p>
+          <p></p>
           <p>
             Grand Brand Media values your privacy. We may collect personal information such as your name,
             email address, phone number, and business details when you fill out a contact form,
@@ -352,7 +352,7 @@ function PolicySections() {
         </PolicyCard>
 
         <PolicyCard id="terms" title="Terms of Service">
-          <p>Effective Date: April 23, 2026</p>
+          <p></p>
           <p>
             By using the services of Grand Brand Media, you agree to these terms. Grand Brand Media
             provides digital marketing services including website creation, local SEO, social media
@@ -371,7 +371,7 @@ function PolicySections() {
         </PolicyCard>
 
         <PolicyCard id="refunds" title="Refund & Cancellation Policy">
-          <p>Effective Date: April 23, 2026</p>
+          <p></p>
           <p>
             Services provided by Grand Brand Media are billed on a month-to-month basis unless otherwise
             agreed in writing.
