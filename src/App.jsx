@@ -59,7 +59,7 @@ export default function GrandBrandMediaSite() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-           className="mt-5 text-4xl sm:text-6xl font-black leading-[1.35] pb-4"
+            className="mt-5 text-4xl sm:text-6xl font-black leading-[1.35] pb-4"
           >
             Grand Brand Media
             <span className="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-300 via-cyan-200 to-emerald-300">
@@ -100,8 +100,8 @@ export default function GrandBrandMediaSite() {
             Our Services – Simple. Powerful. Done For You.
           </h2>
           <p className="mt-3 text-neutral-300">
-            We help small U.S. businesses stand out online with a complete, hands-free digital presence — for just{" "}
-            <span className="font-semibold text-white">$199/month</span>.
+            Grand Brand Media provides digital marketing services including website creation, local SEO,
+            Google Business Profile management, and social media management for small businesses.
           </p>
         </div>
 
@@ -110,7 +110,7 @@ export default function GrandBrandMediaSite() {
             icon={<Globe className="h-5 w-5" />}
             title="Google Business Profile Management"
             points={[
-              "Optimize your listing for top local visibility",
+              "Optimize your listing for stronger local visibility",
               "Post weekly updates & special offers",
               "Respond to reviews professionally",
               "Drive calls, visits, and new customers",
@@ -136,6 +136,24 @@ export default function GrandBrandMediaSite() {
               "Modern, trackable touch-points",
             ]}
           />
+        </div>
+      </section>
+
+      <section id="how-it-works" className="bg-neutral-900/50 border-y border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div className="max-w-2xl">
+            <h2 className="text-3xl sm:text-4xl font-black tracking-tight">How It Works</h2>
+            <p className="mt-3 text-neutral-300">
+              A simple process built for busy business owners.
+            </p>
+          </div>
+
+          <div className="mt-8 grid md:grid-cols-4 gap-5">
+            <StepCard number="1" title="Book a Consult" text="Tell us about your business, goals, and current online presence." />
+            <StepCard number="2" title="We Build the Plan" text="We recommend the right strategy based on your services and market." />
+            <StepCard number="3" title="We Execute Weekly" text="We handle your digital presence, updates, posts, and improvements." />
+            <StepCard number="4" title="You Grow" text="You get a stronger online presence designed to attract more customers." />
+          </div>
         </div>
       </section>
 
@@ -276,6 +294,8 @@ export default function GrandBrandMediaSite() {
         </div>
       </section>
 
+      <PolicySections />
+
       <Footer />
     </div>
   );
@@ -296,6 +316,7 @@ function Header() {
         <nav className="hidden md:flex items-center gap-8">
           <a href="#services" className="text-sm font-medium text-neutral-200 hover:text-white">Services</a>
           <a href="#pricing" className="text-sm font-medium text-neutral-200 hover:text-white">Pricing</a>
+          <a href="#privacy" className="text-sm font-medium text-neutral-200 hover:text-white">Policies</a>
           <a href="#contact" className="text-sm font-medium text-neutral-200 hover:text-white">Contact</a>
         </nav>
 
@@ -304,6 +325,89 @@ function Header() {
         </a>
       </div>
     </header>
+  );
+}
+
+function PolicySections() {
+  return (
+    <section className="bg-neutral-900/60 border-t border-white/10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid lg:grid-cols-3 gap-6">
+        <PolicyCard id="privacy" title="Privacy Policy">
+          <p>Effective Date: April 23, 2026</p>
+          <p>
+            Grand Brand Media values your privacy. We may collect personal information such as your name,
+            email address, phone number, and business details when you fill out a contact form,
+            communicate with us, or sign up for our services.
+          </p>
+          <p>
+            We use this information to respond to inquiries, provide services, communicate updates,
+            and improve our services. We do not sell, trade, or share your personal information with third
+            parties for marketing purposes.
+          </p>
+          <p>
+            We may use third-party tools such as Stripe for payments and Formspree for contact forms.
+            These services have their own privacy policies.
+          </p>
+          <p>Questions? Contact support@grandbrandmedia.com.</p>
+        </PolicyCard>
+
+        <PolicyCard id="terms" title="Terms of Service">
+          <p>Effective Date: April 23, 2026</p>
+          <p>
+            By using the services of Grand Brand Media, you agree to these terms. Grand Brand Media
+            provides digital marketing services including website creation, local SEO, social media
+            management, Google Business Profile support, and related services.
+          </p>
+          <p>
+            Services are billed monthly unless otherwise agreed. Payments may be processed securely
+            through third-party providers such as Stripe.
+          </p>
+          <p>
+            While we work to deliver strong results, we do not guarantee specific rankings, traffic,
+            leads, sales, or revenue. Clients agree to provide the information, approvals, and access
+            required for services to be performed.
+          </p>
+          <p>Grand Brand Media may update these terms at any time.</p>
+        </PolicyCard>
+
+        <PolicyCard id="refunds" title="Refund & Cancellation Policy">
+          <p>Effective Date: April 23, 2026</p>
+          <p>
+            Services provided by Grand Brand Media are billed on a month-to-month basis unless otherwise
+            agreed in writing.
+          </p>
+          <p>
+            Clients may cancel their subscription at any time before the next billing cycle.
+          </p>
+          <p>
+            Due to the nature of digital services, refunds are not provided for work already completed,
+            services already delivered, or time already spent on a client project.
+          </p>
+          <p>For questions about billing or cancellation, contact support@grandbrandmedia.com.</p>
+        </PolicyCard>
+      </div>
+    </section>
+  );
+}
+
+function PolicyCard({ id, title, children }) {
+  return (
+    <div id={id} className="rounded-3xl border border-white/10 bg-neutral-950/70 p-6 shadow-xl scroll-mt-24">
+      <h2 className="text-2xl font-black">{title}</h2>
+      <div className="mt-4 space-y-3 text-sm leading-6 text-neutral-300">{children}</div>
+    </div>
+  );
+}
+
+function StepCard({ number, title, text }) {
+  return (
+    <div className="rounded-2xl border border-white/10 bg-neutral-950/70 p-5 shadow-sm">
+      <div className="h-9 w-9 rounded-xl bg-gradient-to-br from-fuchsia-500 to-cyan-400 text-white grid place-items-center font-black">
+        {number}
+      </div>
+      <h3 className="mt-4 font-bold text-white">{title}</h3>
+      <p className="mt-2 text-sm text-neutral-300">{text}</p>
+    </div>
   );
 }
 
@@ -470,16 +574,17 @@ function Footer() {
         </div>
 
         <div>
-          <div className="text-white font-semibold">Contact</div>
+          <div className="text-white font-semibold">Policies</div>
           <ul className="mt-3 space-y-2 text-sm text-neutral-300">
-            <li>(302) 487-0516</li>
-            <li>support@grandbrandmedia.com</li>
+            <li><a href="#privacy" className="hover:underline">Privacy Policy</a></li>
+            <li><a href="#terms" className="hover:underline">Terms of Service</a></li>
+            <li><a href="#refunds" className="hover:underline">Refund Policy</a></li>
           </ul>
         </div>
       </div>
 
       <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-xs text-neutral-400 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-xs text-neutral-400 flex flex-col sm:flex-row gap-3 items-start sm:items-center justify-between">
           <div>© {new Date().getFullYear()} Grand Brand Media. All rights reserved.</div>
           <div className="flex items-center gap-1 opacity-80">
             <Sparkles className="h-3.5 w-3.5" /> Built to convert
