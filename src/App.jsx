@@ -247,7 +247,7 @@ export default function GrandBrandMediaSite() {
 
             <ul className="mt-6 space-y-3 text-neutral-200">
               <li className="flex items-center gap-2">
-                <Phone className="h-5 w-5 text-fuchsia-300" /> <a href="tel:+13027262963">(302) 726-2963</a>
+                <Phone className="h-5 w-5 text-fuchsia-300" /> <a href="tel:+13027262657">(302) 726-2657</a>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-5 w-5 text-fuchsia-300" /> support@grandbrandmedia.com
